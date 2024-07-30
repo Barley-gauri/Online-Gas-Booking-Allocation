@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --text-red:red;
+    --text-white:white;
+    --text-black:black;
+    --text-grey:grey;
+
+
+    --bg-red:red;
+    --bg-grey:grey;
+    --bg-white:white;
+    --bg-black:black;
+}
+
+header .slider-img img {
+    height: 670px;
+    position: relative;
+}
+
+.navbar .brand-name{
+ color: var(--text-red);
+ font-size: 1.5rem;
+}
+
+.navbar li a{
+ color: var(--text-black);   
+ /* padding: 0px 20px !important ; */
+} 
+
+.navbar li  a:hover {
+ color: var(--text-grey );
+}
+
+
+
+
+
