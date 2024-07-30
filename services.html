@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Cooking Gas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .info .user-services-page-logo {
+            padding-left: 40px;
+            background-color: black;
+            color: white;
+            opacity: 1;
+            height: 48px;
+        }
+        .info .info1{
+            margin-left: 5%;
+            text-align: justify;
+            margin-right: 5%;
+        }
+        .ftr1{
+            margin-left:42%;
+        }
+        .ftr{
+            background-color: black;
+            color:white;
+            opacity:1;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home-english" class="home ">
+
+        <div class="container-fluid px-0 ">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+                <div class="container-fluid ">
+                    <a class="navbar-brand fw-bolder brand-name" href="#">Bharat Cooking Gas</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between " id="navbarNav">
+                        <ul class="navbar-nav fw-bold ">
+                            <li class="nav-item  ">
+                                <a class=" nav-link " aria-current="page" href="{% url 'index' %}">Home</a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class=" nav-link   " href="{% url 'about' %}">About </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'services' %}">Services </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="{% url 'contact' %}">Contact Us </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+                
+        <div class="user-services-page">
+            <img src="../static/img/gas2.png" class="img-fluid" style="width:100%;">          
+        </div>
+        <div class="info">
+        <h3 class="user-services-page-logo" >Bharat Cooking Gas</h3>
+        
+        <div class="info1">
+            <h2>Safety Management at Bharat Gas</h2>
+           <p> IndianOil is committed to safety and demonstrated leadership in the field of Health, Safety and Environmental. 
+            The Health, Safety and Environmental (H,S&E) policy of IndianOil demonstrates this commitment. IndianOil has a well-defined
+            Health, Safety and Environmental (H,S&E) Policy that gives direction for various safety, occupational health and
+            environment protection related activities. The safety & fire protection measures at IndianOil encompass a well-sensitised 
+            Management, focus on imparting regular training and a culture of safety throughout the Company.
+            Well-sensitised Management
+            Employee Participation:To boost safety consciousness, all the employees and others related to our operation are involved 
+            in the safety culture. Safety Committees play vital role in this regard. Representatives of the workmen and officers work
+             together in the Location Safety Committees. Safety awareness is enhanced by observance of Safety Day every month and 
+             safety performance is encouraged through safety awards.
+            Safety is reviewed in the Local Management Committee Meetings chaired by Unit Head/Installation Head. Functional Directors
+             on the Board of IndianOil review safety performance in the monthly Performance Review Meetings.
+            The Board of Directors are appraised on safety performance with regard to implementation of recommendations of External
+             Safety Audit (ESA) on regular basis. Major incidents and corrective actions taken are also appraised to the Board.</p>
+            <h2>Culture of Safety</h2>
+            <p>Process hazards are reviewed at all phases of project life by multidisciplinary teams. Hazard and Operability (HAZOP) 
+            study and Risk Analysis are carried out to identifify, assess and control process hazards. Quantitative Risk Analysis 
+            (QRA) is carried out for new unit or facilities and actions are taken to mitigate or minimize the hazards.
+            For new projects, pre-commissioning checks and audits are carried out by multi-disciplinary teams and deviations, if any,
+             are corrected before start up. Also pre-commissioning audit is carried out by the Oil Industry Safety Directorate (OISD)
+              for new units/ installations.
+            Mechanical integrity of equipment/ system is ensured through condition monitoring, periodic inspection and 
+            preventive/predictive maintenance for reliable and safe operation.
+            Operating manuals are updated periodically to ensure integrity of procedure. Use of proper Personal Protective Equipment
+             (PPE) is enforced. Strict supervision is maintained by Fire & Safety Personnel/site supervisors regarding compliance of
+              permit conditions and use of PPE.</p>
+            </div> 
+    </header>
+    <footer class="ftr">
+        <div class="ftr1">
+       Copyright &copy;. All Rights Reserved.<br>
+       Designed & Developed by Gauri Barley
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/sc.js"></script>
+</body>
+
+</html>

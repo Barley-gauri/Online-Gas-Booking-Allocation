@@ -1,0 +1,35 @@
+<div class="modal fade" id="UploadModal" tabindex="-1" aria-labelledby="registrationModalLabel"
+             aria-hidden="true">
+             <div class="modal-dialog">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h5 class="modal-title" id="registrationModalLabel">Upload KYC</h5>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal"
+                             aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                         <form method="post" action="{% url 'kycUpload' %}">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="adhar" class="form-label">Adhar Number</label>
+                                <input type="number" class="form-control" id="adhar" name="tadhar"
+                                    placeholder="Enter your Adhar Number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="empancardil" class="form-label">Pancard Number</label>
+                                <input type="number" class="form-control" id="pancard" name="tpan"
+                                    placeholder="Enter your Pancard Number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="gasno" class="form-label">RashanCard Number</label>
+                                <input type="number" class="form-control" id="rashancard" name="trashan"
+                                    placeholder="Enter your Gas Number" required>
+                            </div>                           
+                             <div class="text-center">
+                                 <button type="submit" class="btn btn-primary">Submit </button>
+
+                             </div>
+                         </form>
+                     </div>
+                 </div>
+             </div>

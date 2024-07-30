@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Cooking Gas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+.contactinfo{
+
+    display: flex;
+}
+.contactinfo .contactaddress{
+    background-color: #b2eff4;
+    color: black;
+}
+.contactinfo .box{
+    margin-left: 10%;
+}
+.contactinfo .text{
+    text-align: center;
+}
+.contactinfo .text2{
+    margin-right: 20%;
+    margin-left: 10%;
+}
+.ftr1{
+    margin-left:42%;
+}
+.ftr{
+    background-color: black;
+    color:white;
+    opacity:1;
+}
+    </style>
+</head>
+
+<body>
+    <header id="home-english" class="services ">
+
+        <div class="container-fluid px-0 ">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+                <div class="container-fluid ">
+                    <a class="navbar-brand fw-bolder brand-name" href="#">Raisoni Gas Agency </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between " id="navbarNav">
+                        <ul class="navbar-nav fw-bold ">
+                            <li class="nav-item  ">
+                                <a class=" nav-link " aria-current="page" href="{% url 'index' %}">Home</a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class=" nav-link   " href="{% url 'about' %}">About </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'services' %}">Services </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="{% url 'contact' %}">Contact Us </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+                
+        <div class="user-services-page">
+            <img src="../static/img/Screenshot (1559).png" class="img-fluid" style="width:100%;">          
+        </div>
+        <div class="user-contact-page-logo">
+            {% comment %} <h3>Bharat Cooking gas</h3> {% endcomment %}<br><br>
+        </div>
+
+        <!--contact form-->
+        <div class="row gy-4 contactinfo">
+
+                    <div class="col-xl-6 ">
+                            <div class="row box">
+                              <div class="col-lg-6 text">
+                                <div class="info-box card contactaddress">
+                                  <i class="bi bi-geo-alt"></i>
+                                  <h3>Address</h3>
+                                  <p>Raisoni Nagar,<br>Amravati</p>
+                                </div>
+                                </div>
+                                  <div class="col-lg-6 text">
+                                <div class="info-box card contactaddress">
+                                  <i class="bi bi-telephone"></i>
+                                  <h3>Call Us</h3>
+                                  <p>9870624190<br>8698094498</p>
+                                </div>
+                                  </div>
+                                  <div class="col-lg-6 text">
+                                <div class="info-box card contactaddress">
+                                  <i class="bi bi-envelope"></i>
+                                  <h3>Email Us</h3>
+                                  <p>raisonigasagency@gmail.com<br>raisonigasagency.com</p>
+                                </div>
+                                  </div>
+                                  <div class="col-lg-6 text">
+                                <div class="info-box card contactaddress">
+                                  <i class="bi bi-clock"></i>
+                                  <h3>Open Hours</h3>
+                                  <p>Monday - Sunday<br>24/7</p>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+    
+
+                <div class="col-xl-6 text1">
+                      <div class="card p-4 text2">
+                          <form action="{% url 'feedbackform' %}" method="post" class="php-email-form" >
+                            {% csrf_token %}
+                              <div class="row gy-4">
+                                  <h3>Feedback</h3>
+                                     <div class="col-md-6">
+                                       <input type="text" name="tfullname" class="form-control" placeholder="Your Name" required>
+                                      </div>
+                    
+                                      <div class="col-md-6 ">
+                                          <input type="email" class="form-control" name="temail" placeholder="Your Email" required>
+                                      </div>
+                  
+                                      <div class="col-md-12">
+                                          <textarea class="form-control" name="tmessage" rows="6" placeholder="Message" required></textarea>
+                                      </div>
+                    
+                                      <div class="col-md-12 text-center">
+                                          <button type="submit" class="btn btn-primary">Send Message</button>
+                                      </div>
+                                  </div>
+                          </form>
+                    </div>
+                </div>
+
+        </div>
+    
+        <!--contact form end--> 
+    </header><br>
+    <footer class="ftr">
+        <div class="ftr1">
+       Copyright &copy;. All Rights Reserved.<br>
+       Designed & Developed by Gauri Barley
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/sc.js"></script>
+</body>
+
+</html>
